@@ -5,6 +5,8 @@ import { AuroraBackground } from './AuroraBackground';
 import { TechGridBackground } from './TechGridBackground';
 import { NoiseBackground } from './NoiseBackground';
 import { PathBackground } from './PathBackground';
+import { SectionSpotlight } from './SectionSpotlight';
+import { ScrollPaths } from './ScrollPaths';
 
 export type SectionType = 'hero' | 'about' | 'skills' | 'projects' | 'experience' | 'languages' | 'contact';
 
@@ -61,8 +63,11 @@ export const BackgroundManager = () => {
         className="absolute inset-0"
         style={{ background: 'var(--gradient-hero)' }}
       />
+
+      {/* Scroll-animated SVG paths layer */}
+      <ScrollPaths />
       
-      {/* Animated background layer */}
+      {/* Section-specific background layer */}
       <AnimatePresence mode="wait">
         <motion.div
           key={activeSection}
@@ -78,6 +83,9 @@ export const BackgroundManager = () => {
           <BackgroundComponent />
         </motion.div>
       </AnimatePresence>
+
+      {/* Section spotlight overlay */}
+      <SectionSpotlight />
     </div>
   );
 };

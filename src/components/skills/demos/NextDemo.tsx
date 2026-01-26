@@ -20,23 +20,35 @@ export const NextDemo = ({ isPlaying, reducedMotion }: NextDemoProps) => {
       </div>
 
       {/* Next.js Logo Animation */}
-      <motion.div
-        className="relative w-16 h-16"
-        animate={isPlaying && !reducedMotion ? { rotate: [0, 360] } : {}}
-        transition={{ duration: 8, repeat: Infinity, ease: 'linear' }}
-      >
-        <div className="absolute inset-0 rounded-full border-2 border-white/20" />
+      <div className="relative w-16 h-16">
+        {/* Outer glow ring */}
         <motion.div
-          className="absolute inset-2 rounded-full bg-white"
+          className="absolute inset-0 rounded-full"
+          style={{ 
+            background: 'linear-gradient(135deg, hsl(0 0% 100% / 0.3), hsl(0 0% 100% / 0.1))',
+            boxShadow: '0 0 20px hsl(0 0% 100% / 0.2)'
+          }}
           animate={isPlaying && !reducedMotion ? {
-            scale: [1, 0.9, 1],
+            scale: [1, 1.1, 1],
+            opacity: [0.6, 0.3, 0.6],
           } : {}}
-          transition={{ duration: 2, repeat: Infinity }}
+          transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
         />
-        <div className="absolute inset-0 flex items-center justify-center">
+        {/* Main circle */}
+        <motion.div
+          className="absolute inset-1 rounded-full bg-white flex items-center justify-center shadow-lg"
+          animate={isPlaying && !reducedMotion ? {
+            boxShadow: [
+              '0 0 0 0 hsl(0 0% 100% / 0.4)',
+              '0 0 20px 4px hsl(0 0% 100% / 0.2)',
+              '0 0 0 0 hsl(0 0% 100% / 0.4)',
+            ],
+          } : {}}
+          transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
+        >
           <span className="text-black font-bold text-xl">N</span>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
 
       {/* Features */}
       <div className="flex gap-4">

@@ -81,16 +81,12 @@ export const Contact = () => {
       ref={sectionRef}
       className="section-padding relative overflow-hidden"
     >
-      <div className="absolute inset-0 pointer-events-none opacity-30"
-        style={{ background: 'radial-gradient(ellipse at center, hsl(190 90% 50% / 0.08), transparent 60%)' }}
-      />
-
       <div className="container-wide relative z-10">
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
-          className="max-w-4xl mx-auto"
+          className="max-w-4xl mx-auto surface-panel p-6 sm:p-10"
         >
           {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-12">

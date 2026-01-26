@@ -1,10 +1,16 @@
 {
+  "meta": {
+    "title": "Full-Stack Developer Portfolio | Your Name",
+    "description": "Full-stack developer specializing in React, TypeScript, Node.js. Building modern web applications with clean architecture and exceptional user experiences.",
+    "keywords": "full-stack developer, React, TypeScript, Node.js, web development, portfolio"
+  },
   "nav": {
     "projects": "Projects",
     "skills": "Skills",
     "experience": "Experience",
     "contact": "Contact",
-    "about": "About"
+    "about": "About",
+    "languages": "Languages"
   },
   "hero": {
     "title": "Full-Stack Developer",
@@ -168,8 +174,142 @@
       }
     }
   },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "A selection of projects that showcase my skills and experience",
+    "viewCase": "View Case Study",
+    "viewLive": "Live Demo",
+    "viewCode": "View Code",
+    "close": "Close",
+    "problem": "The Problem",
+    "solution": "The Solution",
+    "result": "The Result",
+    "stack": "Tech Stack",
+    "screenshots": "Screenshots",
+    "owned": "What I Owned",
+    "items": {
+      "ecommerce": {
+        "title": "E-Commerce Platform",
+        "desc": "A full-featured e-commerce platform with real-time inventory, payment processing, and admin dashboard.",
+        "role": "Lead Full-Stack Developer",
+        "problem": "The client needed a scalable e-commerce solution that could handle 10,000+ concurrent users with real-time inventory updates.",
+        "solution": "Built a microservices architecture with React frontend, Node.js backend, Redis caching, and PostgreSQL database. Implemented WebSocket for live inventory.",
+        "result": "Achieved 99.9% uptime, 200ms average response time, and 40% increase in conversion rate.",
+        "owned1": "System architecture and database design",
+        "owned2": "Payment integration and checkout flow",
+        "owned3": "Real-time inventory sync system"
+      },
+      "analytics": {
+        "title": "Analytics Dashboard",
+        "desc": "Real-time data visualization dashboard with custom charts, filtering, and export capabilities.",
+        "role": "Frontend Lead",
+        "problem": "Marketing team needed a way to visualize complex data from multiple sources in real-time.",
+        "solution": "Created interactive dashboards using Vue.js, D3.js for custom visualizations, and GraphQL for efficient data fetching.",
+        "result": "Reduced report generation time from 2 hours to 5 minutes, serving 500+ daily active users.",
+        "owned1": "Custom D3.js chart components",
+        "owned2": "GraphQL API integration"
+      },
+      "mobileApp": {
+        "title": "Fitness Tracking App",
+        "desc": "Cross-platform mobile app for fitness tracking with social features and AI-powered recommendations.",
+        "role": "Full-Stack Developer",
+        "problem": "Users wanted a unified platform to track workouts, nutrition, and connect with fitness communities.",
+        "solution": "Developed a React Native app with Firebase backend, implementing AI recommendations using TensorFlow.js.",
+        "result": "50,000+ downloads in first month, 4.8 star rating on app stores.",
+        "owned1": "Mobile app development",
+        "owned2": "AI recommendation engine"
+      }
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My professional journey in software development",
+    "companies": {
+      "techCorp": "TechCorp Inc.",
+      "startupInc": "Startup Inc.",
+      "agencyPro": "Agency Pro"
+    },
+    "roles": {
+      "seniorDev": "Senior Full-Stack Developer",
+      "fullstackDev": "Full-Stack Developer",
+      "frontendDev": "Frontend Developer"
+    },
+    "periods": {
+      "techCorp": "2022 - Present",
+      "startupInc": "2020 - 2022",
+      "agencyPro": "2018 - 2020"
+    },
+    "bullets": {
+      "techCorp": {
+        "bullet1": "Led development of microservices architecture serving 1M+ users",
+        "bullet2": "Mentored junior developers and established coding standards",
+        "bullet3": "Reduced deployment time by 60% through CI/CD improvements"
+      },
+      "startupInc": {
+        "bullet1": "Built MVP from scratch, helping secure $2M in seed funding",
+        "bullet2": "Implemented real-time collaboration features using WebSockets",
+        "bullet3": "Optimized database queries resulting in 3x performance improvement"
+      },
+      "agencyPro": {
+        "bullet1": "Delivered 20+ client projects on time and within budget",
+        "bullet2": "Specialized in responsive design and accessibility"
+      }
+    }
+  },
+  "languages": {
+    "title": "Languages",
+    "subtitle": "Languages I speak",
+    "names": {
+      "armenian": "Armenian",
+      "russian": "Russian",
+      "english": "English"
+    },
+    "notes": {
+      "armenian": "Native speaker",
+      "russian": "Professional proficiency",
+      "english": "Professional proficiency"
+    },
+    "level": {
+      "1": "Basic",
+      "2": "Conversational",
+      "3": "Intermediate",
+      "4": "Professional",
+      "5": "Native"
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have a project in mind? Let's discuss how we can work together to bring your ideas to life.",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    },
+    "validation": {
+      "nameRequired": "Name is required",
+      "nameMax": "Name must be less than 100 characters",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email address",
+      "emailMax": "Email must be less than 255 characters",
+      "messageRequired": "Message is required",
+      "messageMax": "Message must be less than 1000 characters"
+    },
+    "links": {
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "telegram": "Telegram"
+    },
+    "orConnect": "Or connect directly"
+  },
   "footer": {
-    "rights": "All rights reserved"
+    "rights": "All rights reserved",
+    "builtWith": "Built with React + Tailwind CSS",
+    "backToTop": "Back to top"
   },
   "accessibility": {
     "menuOpen": "Open menu",

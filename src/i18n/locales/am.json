@@ -1,175 +1,222 @@
 {
+  "meta": {
+    "title": "Full-Stack Ծdelays | Ձdelays Delays",
+    "description": "Full-stack delays delays React, TypeScript, Node.js. Delays delays delays delays.",
+    "keywords": "full-stack, React, TypeScript, Node.js, delays delays, portfolio"
+  },
   "nav": {
-    "projects": "Նախագdelays",
-    "skills": "Հմdelays",
+    "projects": "Նdelays",
+    "skills": "Հdelays",
     "experience": "Փdelays",
     "contact": "Կdelays",
-    "about": "Իdelays մdelays"
+    "about": "Իdelays մdelays",
+    "languages": "Լdelays"
   },
   "hero": {
-    "title": "Full-Stack Ծրdelays",
-    "subtitle": " Delays delays delays delays delays delays delays delays delays delays delays delays delays.",
+    "title": "Full-Stack Ծdelays",
+    "subtitle": "Delays delays delays delays delays delays delays delays delays delays.",
     "cta": {
-      "projects": "Դdelays նdelays",
+      "projects": "Delays նdelays",
       "contact": "Կdelays"
     },
-    "availability": "Հdelays նdelays նdelays"
+    "availability": "Հdelays է նdelays delays"
   },
   "about": {
     "title": "Իdelays մdelays",
-    "desc": "Delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays.",
+    "desc": "Delays delays delays delays delays delays delays delays delays.",
     "cards": [
-      {
-        "title": "Մdelays delays",
-        "desc": "Delays delays delays delays delays delays delays delays."
-      },
-      {
-        "title": "Արdelays",
-        "desc": "Delays delays delays delays delays delays delays delays."
-      },
-      {
-        "title": " Delays delays",
-        "desc": "Delays delays delays delays delays delays delays delays."
-      }
+      { "title": "Մdelays delays", "desc": "Delays delays delays delays delays." },
+      { "title": "Արdelays", "desc": "Delays delays delays delays delays." },
+      { "title": "Delays delays", "desc": "Delays delays delays delays delays." }
     ],
     "stats": {
       "years": "Տdelays փdelays",
       "projects": "Նdelays",
-      "clients": "Գdelays հdelays"
+      "clients": "Հdelays"
     }
   },
   "skills": {
     "title": "Հdelays delays",
-    "subtitle": "Delays delays delays delays delays delays delays delays",
+    "subtitle": "Delays delays delays delays delays",
     "categories": {
       "frontend": "Delays",
       "ui": "UI/UX",
       "vue": "Vue delays",
       "backend": "Delays",
       "data": "Delays",
-      "devops": "DevOps/Delays",
+      "devops": "DevOps",
       "tooling": "Delays",
       "platforms": "Delays",
       "seo": "SEO"
     },
-    "playPause": {
-      "play": "Delays դdelays",
-      "pause": "Delays"
-    },
+    "playPause": { "play": "Delays", "pause": "Delays" },
     "useCases": "Delays",
     "items": {
-      "react": {
-        "name": "React",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      "react": { "name": "React", "useCases": ["Delays", "Delays", "Delays"] },
+      "typescript": { "name": "TypeScript", "useCases": ["Delays", "Delays", "Delays"] },
+      "nextjs": { "name": "Next.js", "useCases": ["Delays", "Delays", "Delays"] },
+      "tailwind": { "name": "Tailwind CSS", "useCases": ["Delays", "Delays", "Delays"] },
+      "redux": { "name": "Redux Toolkit", "useCases": ["Delays", "Delays", "Delays"] },
+      "vue": { "name": "Vue.js", "useCases": ["Delays", "Delays", "Delays"] },
+      "nuxt": { "name": "Nuxt.js", "useCases": ["Delays", "Delays", "Delays"] },
+      "pinia": { "name": "Pinia", "useCases": ["Delays", "Delays", "Delays"] },
+      "nodejs": { "name": "Node.js", "useCases": ["Delays", "Delays", "Delays"] },
+      "express": { "name": "Express", "useCases": ["Delays", "Delays", "Delays"] },
+      "graphql": { "name": "GraphQL", "useCases": ["Delays", "Delays", "Delays"] },
+      "websockets": { "name": "WebSockets", "useCases": ["Delays", "Delays", "Delays"] },
+      "rest": { "name": "REST API", "useCases": ["Delays", "Delays", "Delays"] },
+      "postgresql": { "name": "PostgreSQL", "useCases": ["Delays", "Delays", "Delays"] },
+      "mongodb": { "name": "MongoDB", "useCases": ["Delays", "Delays", "Delays"] },
+      "redis": { "name": "Redis", "useCases": ["Delays", "Delays", "Delays"] },
+      "docker": { "name": "Docker", "useCases": ["Delays", "Delays", "Delays"] },
+      "kubernetes": { "name": "Kubernetes", "useCases": ["Delays", "Delays", "Delays"] },
+      "aws": { "name": "AWS", "useCases": ["Delays", "Delays", "Delays"] },
+      "git": { "name": "Git", "useCases": ["Delays", "Delays", "Delays"] },
+      "webpack": { "name": "Webpack", "useCases": ["Delays", "Delays", "Delays"] },
+      "vite": { "name": "Vite", "useCases": ["Delays", "Delays", "Delays"] },
+      "vercel": { "name": "Vercel", "useCases": ["Delays", "Delays", "Delays"] },
+      "supabase": { "name": "Supabase", "useCases": ["Delays", "Delays", "Delays"] },
+      "figma": { "name": "Figma", "useCases": ["Delays", "Delays", "Delays"] },
+      "framer": { "name": "Framer Motion", "useCases": ["Delays", "Delays", "Delays"] },
+      "seo": { "name": "SEO", "useCases": ["Delays", "Delays", "Delays"] }
+    }
+  },
+  "projects": {
+    "title": "Delays Նdelays",
+    "subtitle": "Delays delays delays delays delays",
+    "viewCase": "Delays կdelays",
+    "viewLive": "Delays",
+    "viewCode": "Delays",
+    "close": "Delays",
+    "problem": "Delays",
+    "solution": "Delays",
+    "result": "Delays",
+    "stack": "Delays",
+    "screenshots": "Delays",
+    "owned": "Delays delays",
+    "items": {
+      "ecommerce": {
+        "title": "E-Commerce delays",
+        "desc": "Delays delays delays delays delays delays.",
+        "role": "Delays Full-Stack delays",
+        "problem": "Delays delays delays delays 10,000+ delays delays.",
+        "solution": "Delays delays delays React, Node.js, Redis delays PostgreSQL.",
+        "result": "99.9% delays, 200ms delays, 40% delays delays.",
+        "owned1": "Delays delays",
+        "owned2": "Delays delays",
+        "owned3": "Delays delays"
       },
-      "typescript": {
-        "name": "TypeScript",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      "analytics": {
+        "title": "Delays dashboard",
+        "desc": "Delays delays delays delays delays.",
+        "role": "Frontend Lead",
+        "problem": "Delays delays delays delays delays.",
+        "solution": "Delays Vue.js, D3.js delays GraphQL.",
+        "result": "Delays 2 delays delays 5 delays.",
+        "owned1": "D3.js delays",
+        "owned2": "GraphQL delays"
       },
-      "nextjs": {
-        "name": "Next.js",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
-      },
-      "tailwind": {
-        "name": "Tailwind CSS",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
-      },
-      "redux": {
-        "name": "Redux Toolkit",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
-      },
-      "vue": {
-        "name": "Vue.js",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
-      },
-      "nuxt": {
-        "name": "Nuxt.js",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
-      },
-      "pinia": {
-        "name": "Pinia",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
-      },
-      "nodejs": {
-        "name": "Node.js",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
-      },
-      "express": {
-        "name": "Express",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
-      },
-      "graphql": {
-        "name": "GraphQL",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
-      },
-      "websockets": {
-        "name": "WebSockets",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
-      },
-      "rest": {
-        "name": "REST API",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
-      },
-      "postgresql": {
-        "name": "PostgreSQL",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
-      },
-      "mongodb": {
-        "name": "MongoDB",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
-      },
-      "redis": {
-        "name": "Redis",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
-      },
-      "docker": {
-        "name": "Docker",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
-      },
-      "kubernetes": {
-        "name": "Kubernetes",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
-      },
-      "aws": {
-        "name": "AWS",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
-      },
-      "git": {
-        "name": "Git",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
-      },
-      "webpack": {
-        "name": "Webpack",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
-      },
-      "vite": {
-        "name": "Vite",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
-      },
-      "vercel": {
-        "name": "Vercel",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
-      },
-      "supabase": {
-        "name": "Supabase",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
-      },
-      "figma": {
-        "name": "Figma",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
-      },
-      "framer": {
-        "name": "Framer Motion",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
-      },
-      "seo": {
-        "name": "SEO",
-        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      "mobileApp": {
+        "title": "Delays delays",
+        "desc": "Delays delays delays delays AI-delays.",
+        "role": "Full-Stack delays",
+        "problem": "Delays delays delays delays delays.",
+        "solution": "React Native delays Firebase delays TensorFlow.js.",
+        "result": "50,000+ delays, 4.8 delays.",
+        "owned1": "Delays delays",
+        "owned2": "AI delays"
       }
     }
   },
+  "experience": {
+    "title": "Delays",
+    "subtitle": "Delays delays delays delays",
+    "companies": {
+      "techCorp": "TechCorp Inc.",
+      "startupInc": "Startup Inc.",
+      "agencyPro": "Agency Pro"
+    },
+    "roles": {
+      "seniorDev": "Senior Full-Stack delays",
+      "fullstackDev": "Full-Stack delays",
+      "frontendDev": "Frontend delays"
+    },
+    "periods": {
+      "techCorp": "2022 - Delays",
+      "startupInc": "2020 - 2022",
+      "agencyPro": "2018 - 2020"
+    },
+    "bullets": {
+      "techCorp": {
+        "bullet1": "Delays delays 1M+ delays delays",
+        "bullet2": "Delays junior delays delays",
+        "bullet3": "Delays 60% delays CI/CD delays"
+      },
+      "startupInc": {
+        "bullet1": "Delays MVP delays $2M delays",
+        "bullet2": "Delays realtime WebSockets delays",
+        "bullet3": "Delays delays 3x delays"
+      },
+      "agencyPro": {
+        "bullet1": "Delays 20+ delays delays",
+        "bullet2": "Delays delays delays delays"
+      }
+    }
+  },
+  "languages": {
+    "title": "Delays",
+    "subtitle": "Delays delays delays",
+    "names": {
+      "armenian": "Delays",
+      "russian": "Delays",
+      "english": "Delays"
+    },
+    "notes": {
+      "armenian": "Delays delays",
+      "russian": "Delays delays",
+      "english": "Delays delays"
+    },
+    "level": {
+      "1": "Delays",
+      "2": "Delays",
+      "3": "Delays",
+      "4": "Delays",
+      "5": "Delays"
+    }
+  },
+  "contact": {
+    "title": "Delays",
+    "subtitle": "Delays delays delays delays delays delays.",
+    "form": {
+      "name": "Delays delays",
+      "email": "Delays Email",
+      "message": "Delays",
+      "submit": "Delays",
+      "sending": "Delays...",
+      "success": "Delays delays!",
+      "error": "Delays delays."
+    },
+    "validation": {
+      "nameRequired": "Delays delays",
+      "nameMax": "Delays 100 delays",
+      "emailRequired": "Delays email",
+      "emailInvalid": "Delays email",
+      "emailMax": "Delays 255 delays",
+      "messageRequired": "Delays delays",
+      "messageMax": "Delays 1000 delays"
+    },
+    "links": {
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "telegram": "Telegram"
+    },
+    "orConnect": "Delays delays"
+  },
   "footer": {
-    "rights": "Delays delays delays"
+    "rights": "Delays delays delays",
+    "builtWith": "Delays React + Tailwind CSS",
+    "backToTop": "Delays"
   },
   "accessibility": {
     "menuOpen": "Delays delays",

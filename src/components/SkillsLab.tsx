@@ -55,16 +55,12 @@ export const SkillsLab = () => {
       ref={sectionRef}
       className="section-padding relative overflow-hidden"
     >
-      {/* Background */}
-      <div className="absolute inset-0 pointer-events-none opacity-30"
-        style={{ background: 'radial-gradient(ellipse at bottom right, hsl(270 80% 50% / 0.1), transparent 60%)' }}
-      />
-
       <div className="container-wide relative z-10">
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
+          className="surface-panel p-6 sm:p-10"
         >
           {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-12">

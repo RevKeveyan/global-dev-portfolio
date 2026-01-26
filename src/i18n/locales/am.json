@@ -1,0 +1,180 @@
+{
+  "nav": {
+    "projects": "Նախագdelays",
+    "skills": "Հմdelays",
+    "experience": "Փdelays",
+    "contact": "Կdelays",
+    "about": "Իdelays մdelays"
+  },
+  "hero": {
+    "title": "Full-Stack Ծրdelays",
+    "subtitle": " Delays delays delays delays delays delays delays delays delays delays delays delays delays.",
+    "cta": {
+      "projects": "Դdelays նdelays",
+      "contact": "Կdelays"
+    },
+    "availability": "Հdelays նdelays նdelays"
+  },
+  "about": {
+    "title": "Իdelays մdelays",
+    "desc": "Delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays.",
+    "cards": [
+      {
+        "title": "Մdelays delays",
+        "desc": "Delays delays delays delays delays delays delays delays."
+      },
+      {
+        "title": "Արdelays",
+        "desc": "Delays delays delays delays delays delays delays delays."
+      },
+      {
+        "title": " Delays delays",
+        "desc": "Delays delays delays delays delays delays delays delays."
+      }
+    ],
+    "stats": {
+      "years": "Տdelays փdelays",
+      "projects": "Նdelays",
+      "clients": "Գdelays հdelays"
+    }
+  },
+  "skills": {
+    "title": "Հdelays delays",
+    "subtitle": "Delays delays delays delays delays delays delays delays",
+    "categories": {
+      "frontend": "Delays",
+      "ui": "UI/UX",
+      "vue": "Vue delays",
+      "backend": "Delays",
+      "data": "Delays",
+      "devops": "DevOps/Delays",
+      "tooling": "Delays",
+      "platforms": "Delays",
+      "seo": "SEO"
+    },
+    "playPause": {
+      "play": "Delays դdelays",
+      "pause": "Delays"
+    },
+    "useCases": "Delays",
+    "items": {
+      "react": {
+        "name": "React",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "typescript": {
+        "name": "TypeScript",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "nextjs": {
+        "name": "Next.js",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "tailwind": {
+        "name": "Tailwind CSS",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "redux": {
+        "name": "Redux Toolkit",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "vue": {
+        "name": "Vue.js",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "nuxt": {
+        "name": "Nuxt.js",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "pinia": {
+        "name": "Pinia",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "nodejs": {
+        "name": "Node.js",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "express": {
+        "name": "Express",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "graphql": {
+        "name": "GraphQL",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "websockets": {
+        "name": "WebSockets",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "rest": {
+        "name": "REST API",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "postgresql": {
+        "name": "PostgreSQL",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "mongodb": {
+        "name": "MongoDB",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "redis": {
+        "name": "Redis",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "docker": {
+        "name": "Docker",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "kubernetes": {
+        "name": "Kubernetes",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "aws": {
+        "name": "AWS",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "git": {
+        "name": "Git",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "webpack": {
+        "name": "Webpack",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "vite": {
+        "name": "Vite",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "vercel": {
+        "name": "Vercel",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "supabase": {
+        "name": "Supabase",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "figma": {
+        "name": "Figma",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "framer": {
+        "name": "Framer Motion",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      },
+      "seo": {
+        "name": "SEO",
+        "useCases": ["Delays delays", "Delays delays", "Delays delays"]
+      }
+    }
+  },
+  "footer": {
+    "rights": "Delays delays delays"
+  },
+  "accessibility": {
+    "menuOpen": "Delays delays",
+    "menuClose": "Delays delays",
+    "languageSwitch": "Delays delays",
+    "currentLanguage": "Delays delays"
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "contact": "Contact",
+    "about": "About"
+  },
+  "hero": {
+    "title": "Full-Stack Developer",
+    "subtitle": "Crafting modern web experiences with cutting-edge technologies. Passionate about clean code, performance, and pixel-perfect interfaces.",
+    "cta": {
+      "projects": "View Projects",
+      "contact": "Get in Touch"
+    },
+    "availability": "Available for new projects"
+  },
+  "about": {
+    "title": "About Me",
+    "desc": "A passionate developer with expertise in building scalable applications. I combine technical excellence with creative problem-solving to deliver exceptional digital experiences.",
+    "cards": [
+      {
+        "title": "Clean Architecture",
+        "desc": "Building maintainable, scalable systems with solid design principles and best practices."
+      },
+      {
+        "title": "Performance First",
+        "desc": "Optimizing every millisecond for lightning-fast user experiences and smooth interactions."
+      },
+      {
+        "title": "Modern Stack",
+        "desc": "Leveraging cutting-edge technologies to build future-proof applications."
+      }
+    ],
+    "stats": {
+      "years": "Years Experience",
+      "projects": "Projects Delivered",
+      "clients": "Happy Clients"
+    }
+  },
+  "skills": {
+    "title": "Skills Lab",
+    "subtitle": "Explore my technical toolkit through interactive demonstrations",
+    "categories": {
+      "frontend": "Frontend",
+      "ui": "UI/UX",
+      "vue": "Vue Ecosystem",
+      "backend": "Backend",
+      "data": "Data",
+      "devops": "DevOps/Cloud",
+      "tooling": "Tooling",
+      "platforms": "Platforms",
+      "seo": "SEO"
+    },
+    "playPause": {
+      "play": "Play Demo",
+      "pause": "Pause Demo"
+    },
+    "useCases": "Use Cases",
+    "items": {
+      "react": {
+        "name": "React",
+        "useCases": ["Single Page Applications", "Component Libraries", "Real-time Dashboards"]
+      },
+      "typescript": {
+        "name": "TypeScript",
+        "useCases": ["Type-safe Development", "Large-scale Applications", "API Contracts"]
+      },
+      "nextjs": {
+        "name": "Next.js",
+        "useCases": ["SSR/SSG Websites", "Full-stack Apps", "E-commerce Platforms"]
+      },
+      "tailwind": {
+        "name": "Tailwind CSS",
+        "useCases": ["Rapid UI Development", "Design Systems", "Responsive Layouts"]
+      },
+      "redux": {
+        "name": "Redux Toolkit",
+        "useCases": ["Complex State Management", "Data Caching", "Time-travel Debugging"]
+      },
+      "vue": {
+        "name": "Vue.js",
+        "useCases": ["Progressive Web Apps", "Interactive UIs", "Reactive Components"]
+      },
+      "nuxt": {
+        "name": "Nuxt.js",
+        "useCases": ["Universal Apps", "Static Sites", "Server Middleware"]
+      },
+      "pinia": {
+        "name": "Pinia",
+        "useCases": ["Vue State Management", "Modular Stores", "DevTools Integration"]
+      },
+      "nodejs": {
+        "name": "Node.js",
+        "useCases": ["REST APIs", "Real-time Services", "Microservices"]
+      },
+      "express": {
+        "name": "Express",
+        "useCases": ["API Development", "Middleware Systems", "Backend Services"]
+      },
+      "graphql": {
+        "name": "GraphQL",
+        "useCases": ["Flexible APIs", "Data Aggregation", "Mobile Backends"]
+      },
+      "websockets": {
+        "name": "WebSockets",
+        "useCases": ["Live Chat", "Real-time Updates", "Multiplayer Games"]
+      },
+      "rest": {
+        "name": "REST API",
+        "useCases": ["CRUD Operations", "Third-party Integration", "Mobile APIs"]
+      },
+      "postgresql": {
+        "name": "PostgreSQL",
+        "useCases": ["Relational Data", "Complex Queries", "Data Integrity"]
+      },
+      "mongodb": {
+        "name": "MongoDB",
+        "useCases": ["Document Storage", "Flexible Schemas", "Real-time Analytics"]
+      },
+      "redis": {
+        "name": "Redis",
+        "useCases": ["Caching", "Session Storage", "Rate Limiting"]
+      },
+      "docker": {
+        "name": "Docker",
+        "useCases": ["Containerization", "Dev Environments", "Microservices"]
+      },
+      "kubernetes": {
+        "name": "Kubernetes",
+        "useCases": ["Container Orchestration", "Auto-scaling", "Load Balancing"]
+      },
+      "aws": {
+        "name": "AWS",
+        "useCases": ["Cloud Hosting", "Serverless Functions", "CDN & Storage"]
+      },
+      "git": {
+        "name": "Git",
+        "useCases": ["Version Control", "Team Collaboration", "CI/CD Pipelines"]
+      },
+      "webpack": {
+        "name": "Webpack",
+        "useCases": ["Bundle Optimization", "Code Splitting", "Asset Management"]
+      },
+      "vite": {
+        "name": "Vite",
+        "useCases": ["Fast Dev Server", "Modern Builds", "Hot Module Replacement"]
+      },
+      "vercel": {
+        "name": "Vercel",
+        "useCases": ["Frontend Deployment", "Edge Functions", "Preview Deployments"]
+      },
+      "supabase": {
+        "name": "Supabase",
+        "useCases": ["Backend as a Service", "Real-time Database", "Auth & Storage"]
+      },
+      "figma": {
+        "name": "Figma",
+        "useCases": ["UI Design", "Prototyping", "Design Systems"]
+      },
+      "framer": {
+        "name": "Framer Motion",
+        "useCases": ["Animations", "Page Transitions", "Gestures"]
+      },
+      "seo": {
+        "name": "SEO",
+        "useCases": ["Search Optimization", "Meta Tags", "Structured Data"]
+      }
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  },
+  "accessibility": {
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "languageSwitch": "Switch language",
+    "currentLanguage": "Current language"
+  }
+}

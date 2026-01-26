@@ -118,8 +118,8 @@ export const SkillsLab = () => {
                         onClick={() => setSelectedSkill(skill)}
                         className={`flex items-center gap-3 p-4 rounded-xl border transition-all focus-ring ${
                           selectedSkill?.id === skill.id
-                            ? 'border-primary bg-primary/10'
-                            : 'border-border/50 bg-card/30 hover:border-primary/50 hover:bg-card/50'
+                            ? 'border-primary bg-primary/10 text-foreground'
+                            : 'border-border bg-card/50 hover:border-primary/50 hover:bg-card/70 text-foreground'
                         }`}
                       >
                         <TechIcon 
@@ -127,7 +127,7 @@ export const SkillsLab = () => {
                           className="w-5 h-5 shrink-0" 
                           style={{ color: skill.color }} 
                         />
-                        <span className="text-sm font-medium truncate">
+                        <span className="text-sm font-medium truncate text-foreground">
                           {t(`skills.items.${skill.labelKey}.name`)}
                         </span>
                       </button>
@@ -142,7 +142,7 @@ export const SkillsLab = () => {
               <div className="surface-card flex-1 min-h-[400px] flex flex-col">
                 {/* Demo Header */}
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-lg font-semibold text-heading">
+                  <h3 className="text-lg font-semibold text-foreground">
                     {selectedSkill ? t(`skills.items.${selectedSkill.labelKey}.name`) : 'Select a skill'}
                   </h3>
                   <Button
@@ -182,14 +182,14 @@ export const SkillsLab = () => {
                 {/* Use Cases */}
                 {selectedSkill && (
                   <div className="mt-4 pt-4 border-t border-border/30">
-                    <h4 className="text-caption mb-2">
+                    <h4 className="text-caption mb-2 text-muted-foreground">
                       {t('skills.useCases')}
                     </h4>
                     <div className="flex flex-wrap gap-2">
                       {(t(`skills.items.${selectedSkill.labelKey}.useCases`, { returnObjects: true }) as string[]).map((useCase, index) => (
                         <span 
                           key={index}
-                          className="px-3 py-1 rounded-full text-xs font-medium bg-muted/50 text-subtle"
+                          className="px-3 py-1 rounded-full text-xs font-medium bg-muted text-foreground"
                         >
                           {useCase}
                         </span>

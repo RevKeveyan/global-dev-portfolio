@@ -27,6 +27,7 @@ import { WebpackDemo } from './demos/WebpackDemo';
 import { ViteDemo } from './demos/ViteDemo';
 import { VercelDemo } from './demos/VercelDemo';
 import { SupabaseDemo } from './demos/SupabaseDemo';
+import { NestDemo } from './demos/NestDemo';
 
 interface SkillDemoProps {
   skill: Skill;
@@ -89,6 +90,8 @@ export const SkillDemo = ({ skill, isPlaying, reducedMotion }: SkillDemoProps) =
         return <VercelDemo isPlaying={isPlaying} reducedMotion={reducedMotion} />;
       case 'supabase':
         return <SupabaseDemo isPlaying={isPlaying} reducedMotion={reducedMotion} />;
+      case 'nestjs':
+        return <NestDemo isPlaying={isPlaying} reducedMotion={reducedMotion} />;
       default:
         return <DefaultDemo skill={skill} reducedMotion={reducedMotion} />;
     }

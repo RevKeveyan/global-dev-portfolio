@@ -36,6 +36,7 @@ export type DemoType =
   | 'vite'
   | 'vercel'
   | 'supabase'
+  | 'nestjs'
   | 'default';
 
 export interface Skill {
@@ -78,6 +79,7 @@ export const skills: Skill[] = [
 
   // Backend
   { id: 'nodejs', labelKey: 'nodejs', category: 'backend', icon: 'server', demoType: 'nodejs', color: '#339933' },
+  { id: 'nestjs', labelKey: 'nestjs', category: 'backend', icon: 'layers', demoType: 'nestjs', color: '#E0234E' },
   { id: 'express', labelKey: 'express', category: 'backend', icon: 'route', demoType: 'express', color: '#FFFFFF' },
   { id: 'graphql', labelKey: 'graphql', category: 'backend', icon: 'share-2', demoType: 'graphql', color: '#E10098' },
   { id: 'websockets', labelKey: 'websockets', category: 'backend', icon: 'radio', demoType: 'websockets', color: '#00D4FF' },

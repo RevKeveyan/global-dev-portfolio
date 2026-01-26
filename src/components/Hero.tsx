@@ -70,7 +70,7 @@ export const Hero = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="max-w-4xl mx-auto text-center surface-glass p-8 sm:p-12 rounded-3xl"
+          className="max-w-4xl mx-auto text-center"
         >
           {/* Availability Badge */}
           <motion.div variants={itemVariants} className="mb-8">

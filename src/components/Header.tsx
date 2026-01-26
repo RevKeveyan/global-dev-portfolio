@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { useReducedMotion } from '@/hooks/useReducedMotion';
-import { HighContrastToggle } from '@/components/HighContrastToggle';
 import { 
   SUPPORTED_LANGUAGES, 
   LANGUAGE_NAMES, 
@@ -88,10 +87,8 @@ export const Header = () => {
             ))}
           </div>
 
-          {/* Right side: High Contrast + Language Switcher + Mobile Menu */}
-          <div className="flex items-center gap-1">
-            {/* High Contrast Toggle */}
-            <HighContrastToggle />
+          {/* Right side: Language Switcher + Mobile Menu */}
+          <div className="flex items-center gap-2">
             {/* Language Switcher */}
             <div className="relative">
               <button

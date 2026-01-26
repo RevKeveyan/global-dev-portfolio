@@ -39,7 +39,6 @@ export const Languages = () => {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
-          className="surface-panel p-6 sm:p-10 max-w-4xl mx-auto"
         >
           {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-12">

@@ -44,12 +44,13 @@ export const Experience = () => {
       ref={sectionRef}
       className="section-padding relative overflow-hidden"
     >
+      {/* Background handled by BackgroundManager */}
+
       <div className="container-wide relative z-10">
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
-          className="surface-panel p-6 sm:p-10"
         >
           {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-16">

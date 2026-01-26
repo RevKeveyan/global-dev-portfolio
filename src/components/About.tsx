@@ -42,12 +42,17 @@ export const About = () => {
       ref={sectionRef}
       className="section-padding relative overflow-hidden"
     >
+      {/* Subtle background gradient */}
+      <div className="absolute inset-0 pointer-events-none opacity-50"
+        style={{ background: 'radial-gradient(ellipse at center top, hsl(190 90% 50% / 0.05), transparent 60%)' }}
+      />
+
       <div className="container-wide relative z-10">
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
-          className="max-w-5xl mx-auto surface-panel p-8 sm:p-12"
+          className="max-w-5xl mx-auto"
         >
           {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-16">

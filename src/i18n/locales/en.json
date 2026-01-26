@@ -104,6 +104,10 @@
         "name": "Express",
         "useCases": ["API Development", "Middleware Systems", "Backend Services"]
       },
+      "nestjs": {
+        "name": "NestJS",
+        "useCases": ["Enterprise APIs", "Modular Architecture", "GraphQL Services"]
+      },
       "graphql": {
         "name": "GraphQL",
         "useCases": ["Flexible APIs", "Data Aggregation", "Mobile Backends"]

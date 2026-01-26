@@ -130,14 +130,14 @@ export const Hero = () => {
             variants={itemVariants}
             className="relative overflow-hidden py-6 mt-8"
           >
-            <div className="surface-panel px-4 py-3 mx-auto max-w-3xl">
-              <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-muted/80 to-transparent z-10 rounded-l-xl" />
-              <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-muted/80 to-transparent z-10 rounded-r-xl" />
+            <div className="surface-panel px-4 py-3 mx-auto max-w-3xl overflow-hidden">
+              <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-card to-transparent z-10 rounded-l-xl" />
+              <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-card to-transparent z-10 rounded-r-xl" />
               
               <div className={`flex gap-4 ${reducedMotionEnabled ? 'flex-wrap justify-center' : 'animate-ticker'}`}>
                 {/* Duplicate items for seamless loop */}
                 {[...techTicker, ...techTicker].map((tech, index) => (
-                  <div key={`${tech.id}-${index}`} className="ticker-item shrink-0">
+                  <div key={`${tech.id}-${index}`} className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium bg-background border border-border text-foreground shrink-0">
                     <TechIcon name={tech.icon} className="w-4 h-4" style={{ color: tech.color }} />
                     <span>{tech.name}</span>
                   </div>

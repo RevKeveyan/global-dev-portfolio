@@ -44,9 +44,7 @@ export const Experience = () => {
       ref={sectionRef}
       className="section-padding relative overflow-hidden"
     >
-      <div className="absolute inset-0 pointer-events-none opacity-30"
-        style={{ background: 'radial-gradient(ellipse at bottom left, hsl(270 80% 50% / 0.08), transparent 60%)' }}
-      />
+      {/* Background handled by BackgroundManager */}
 
       <div className="container-wide relative z-10">
         <motion.div

@@ -11,12 +11,14 @@ import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { ReducedMotionProvider } from '@/hooks/useReducedMotion';
+import { BackgroundManager } from '@/components/backgrounds';
 
 const Index = () => {
   return (
     <HelmetProvider>
       <ReducedMotionProvider>
-        <div className="min-h-screen bg-background dark">
+        <div className="min-h-screen dark relative">
+          <BackgroundManager />
           <SEOHead />
           <Header />
           <main>

@@ -61,25 +61,10 @@ export const Hero = () => {
 
   return (
     <section 
+      id="hero"
       ref={containerRef}
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
-      style={{ background: 'var(--gradient-hero)' }}
     >
-      {/* Animated background gradient */}
-      {!reducedMotionEnabled && (
-        <motion.div
-          className="absolute inset-0 pointer-events-none"
-          style={{ x: bgX, y: bgY }}
-        >
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full opacity-30"
-            style={{ background: 'var(--gradient-glow)' }}
-          />
-          <div className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full opacity-20"
-            style={{ background: 'radial-gradient(ellipse at center, hsl(270 80% 60% / 0.2), transparent 70%)' }}
-          />
-        </motion.div>
-      )}
-
       <div className="container-wide relative z-10">
         <motion.div
           variants={containerVariants}

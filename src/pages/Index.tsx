@@ -12,14 +12,16 @@ import { Footer } from '@/components/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { ReducedMotionProvider } from '@/hooks/useReducedMotion';
 import { HighContrastProvider } from '@/hooks/useHighContrast';
+import { ThemeProvider } from '@/hooks/useTheme';
 import { BackgroundManager } from '@/components/backgrounds';
 
 const Index = () => {
   return (
     <HelmetProvider>
-      <ReducedMotionProvider>
-        <HighContrastProvider>
-          <div className="min-h-screen dark relative">
+      <ThemeProvider>
+        <ReducedMotionProvider>
+          <HighContrastProvider>
+            <div className="min-h-screen relative">
             <BackgroundManager />
             <SEOHead />
             <Header />
@@ -32,10 +34,11 @@ const Index = () => {
               <Languages />
               <Contact />
             </main>
-            <Footer />
-          </div>
-        </HighContrastProvider>
-      </ReducedMotionProvider>
+              <Footer />
+            </div>
+          </HighContrastProvider>
+        </ReducedMotionProvider>
+      </ThemeProvider>
     </HelmetProvider>
   );
 };

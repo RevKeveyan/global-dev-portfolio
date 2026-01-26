@@ -4,6 +4,7 @@ import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { useReducedMotion } from '@/hooks/useReducedMotion';
 import { AccessibilityToggle } from '@/components/AccessibilityToggle';
+import { ThemeToggle } from '@/components/ThemeToggle';
 import { 
   SUPPORTED_LANGUAGES, 
   LANGUAGE_NAMES, 
@@ -88,8 +89,10 @@ export const Header = () => {
             ))}
           </div>
 
-          {/* Right side: Accessibility + Language Switcher + Mobile Menu */}
+          {/* Right side: Theme + Accessibility + Language Switcher + Mobile Menu */}
           <div className="flex items-center gap-1">
+            {/* Theme Toggle */}
+            <ThemeToggle />
             {/* Accessibility Toggle */}
             <AccessibilityToggle />
             <div className="relative">

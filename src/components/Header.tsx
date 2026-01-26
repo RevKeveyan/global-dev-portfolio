@@ -69,8 +69,8 @@ export const Header = () => {
             className="flex items-center gap-2 text-xl font-display font-bold text-foreground focus-ring rounded-md"
             aria-label="Home"
           >
-            <span className="text-gradient">Dev</span>
-            <span>Portfolio</span>
+            <span className="text-gradient">Revik</span>
+            <span>Keveyan</span>
           </a>
 
           {/* Desktop Navigation */}

@@ -66,14 +66,16 @@ export const SkillsLab = () => {
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
         >
-          {/* Section Header */}
+          {/* Section Header with surface */}
           <motion.div variants={itemVariants} className="text-center mb-12">
-            <h2 className="text-headline mb-4">
-              <span className="text-gradient">{t('skills.title')}</span>
-            </h2>
-            <p className="text-body-lg text-muted-foreground max-w-2xl mx-auto">
-              {t('skills.subtitle')}
-            </p>
+            <div className="surface-panel inline-block px-8 py-6">
+              <h2 className="text-headline mb-4">
+                <span className="text-gradient">{t('skills.title')}</span>
+              </h2>
+              <p className="text-body-lg max-w-2xl mx-auto">
+                {t('skills.subtitle')}
+              </p>
+            </div>
           </motion.div>
 
           {/* Category Tabs */}
@@ -100,45 +102,47 @@ export const SkillsLab = () => {
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Left: Skills Grid */}
             <motion.div variants={itemVariants}>
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={activeCategory}
-                  initial={reducedMotionEnabled ? { opacity: 1 } : { opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={reducedMotionEnabled ? { opacity: 0 } : { opacity: 0, y: -10 }}
-                  transition={{ duration: 0.3 }}
-                  className="grid grid-cols-2 sm:grid-cols-3 gap-3"
-                >
-                  {categorySkills.map((skill) => (
-                    <button
-                      key={skill.id}
-                      onClick={() => setSelectedSkill(skill)}
-                      className={`flex items-center gap-3 p-4 rounded-xl border transition-all focus-ring ${
-                        selectedSkill?.id === skill.id
-                          ? 'border-primary bg-primary/10'
-                          : 'border-border/50 bg-card/50 hover:border-primary/50 hover:bg-card'
-                      }`}
-                    >
-                      <TechIcon 
-                        name={skill.icon} 
-                        className="w-5 h-5 shrink-0" 
-                        style={{ color: skill.color }} 
-                      />
-                      <span className="text-sm font-medium truncate">
-                        {t(`skills.items.${skill.labelKey}.name`)}
-                      </span>
-                    </button>
-                  ))}
-                </motion.div>
-              </AnimatePresence>
+              <div className="surface-card">
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={activeCategory}
+                    initial={reducedMotionEnabled ? { opacity: 1 } : { opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={reducedMotionEnabled ? { opacity: 0 } : { opacity: 0, y: -10 }}
+                    transition={{ duration: 0.3 }}
+                    className="grid grid-cols-2 sm:grid-cols-3 gap-3"
+                  >
+                    {categorySkills.map((skill) => (
+                      <button
+                        key={skill.id}
+                        onClick={() => setSelectedSkill(skill)}
+                        className={`flex items-center gap-3 p-4 rounded-xl border transition-all focus-ring ${
+                          selectedSkill?.id === skill.id
+                            ? 'border-primary bg-primary/10'
+                            : 'border-border/50 bg-card/30 hover:border-primary/50 hover:bg-card/50'
+                        }`}
+                      >
+                        <TechIcon 
+                          name={skill.icon} 
+                          className="w-5 h-5 shrink-0" 
+                          style={{ color: skill.color }} 
+                        />
+                        <span className="text-sm font-medium truncate">
+                          {t(`skills.items.${skill.labelKey}.name`)}
+                        </span>
+                      </button>
+                    ))}
+                  </motion.div>
+                </AnimatePresence>
+              </div>
             </motion.div>
 
             {/* Right: Preview Panel */}
             <motion.div variants={itemVariants} className="flex flex-col">
-              <div className="demo-container flex-1 min-h-[400px] p-6 flex flex-col">
+              <div className="surface-card flex-1 min-h-[400px] flex flex-col">
                 {/* Demo Header */}
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-lg font-semibold text-foreground">
+                  <h3 className="text-lg font-semibold text-heading">
                     {selectedSkill ? t(`skills.items.${selectedSkill.labelKey}.name`) : 'Select a skill'}
                   </h3>
                   <Button
@@ -162,7 +166,7 @@ export const SkillsLab = () => {
                 </div>
 
                 {/* Demo Area */}
-                <div className="flex-1 flex items-center justify-center">
+                <div className="flex-1 flex items-center justify-center surface-glass rounded-lg p-4">
                   <AnimatePresence mode="wait">
                     {selectedSkill && (
                       <SkillDemo 
@@ -178,14 +182,14 @@ export const SkillsLab = () => {
                 {/* Use Cases */}
                 {selectedSkill && (
                   <div className="mt-4 pt-4 border-t border-border/30">
-                    <h4 className="text-caption text-muted-foreground mb-2">
+                    <h4 className="text-caption mb-2">
                       {t('skills.useCases')}
                     </h4>
                     <div className="flex flex-wrap gap-2">
                       {(t(`skills.items.${selectedSkill.labelKey}.useCases`, { returnObjects: true }) as string[]).map((useCase, index) => (
                         <span 
                           key={index}
-                          className="px-3 py-1 rounded-full text-xs font-medium bg-muted/50 text-muted-foreground"
+                          className="px-3 py-1 rounded-full text-xs font-medium bg-muted/50 text-subtle"
                         >
                           {useCase}
                         </span>

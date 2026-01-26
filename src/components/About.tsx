@@ -54,17 +54,19 @@ export const About = () => {
           animate={isInView ? 'visible' : 'hidden'}
           className="max-w-5xl mx-auto"
         >
-          {/* Section Header */}
+          {/* Section Header with surface */}
           <motion.div variants={itemVariants} className="text-center mb-16">
-            <h2 className="text-headline mb-4">
-              <span className="text-gradient">{t('about.title')}</span>
-            </h2>
-            <p className="text-body-lg text-muted-foreground max-w-2xl mx-auto">
-              {t('about.desc')}
-            </p>
+            <div className="surface-panel inline-block px-8 py-6 mb-6">
+              <h2 className="text-headline mb-4">
+                <span className="text-gradient">{t('about.title')}</span>
+              </h2>
+              <p className="text-body-lg max-w-2xl mx-auto">
+                {t('about.desc')}
+              </p>
+            </div>
           </motion.div>
 
-          {/* Value Cards */}
+          {/* Value Cards - using surface-interactive */}
           <motion.div 
             variants={containerVariants}
             className="grid md:grid-cols-3 gap-6 mb-16"
@@ -75,36 +77,38 @@ export const About = () => {
                 <motion.div
                   key={index}
                   variants={itemVariants}
-                  className="card-interactive group"
+                  className="surface-interactive group"
                   whileHover={reducedMotionEnabled ? {} : { y: -8 }}
                 >
                   <div className="flex items-center gap-3 mb-4">
                     <div className="p-2.5 rounded-xl bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors">
                       <Icon className="w-5 h-5" />
                     </div>
-                    <h3 className="text-title text-foreground">{card.title}</h3>
+                    <h3 className="text-title">{card.title}</h3>
                   </div>
-                  <p className="text-body text-muted-foreground">{card.desc}</p>
+                  <p className="text-body">{card.desc}</p>
                 </motion.div>
               );
             })}
           </motion.div>
 
-          {/* Stats Row */}
+          {/* Stats Row with surface */}
           <motion.div 
             variants={itemVariants}
-            className="flex flex-wrap justify-center gap-8 md:gap-16"
+            className="surface-card"
           >
-            {stats.map((stat) => (
-              <div key={stat.id} className="text-center">
-                <div className="text-4xl md:text-5xl font-display font-bold text-gradient mb-2">
-                  {stat.value}{stat.suffix}
+            <div className="flex flex-wrap justify-center gap-8 md:gap-16 py-4">
+              {stats.map((stat) => (
+                <div key={stat.id} className="text-center">
+                  <div className="text-4xl md:text-5xl font-display font-bold text-gradient mb-2">
+                    {stat.value}{stat.suffix}
+                  </div>
+                  <div className="text-caption">
+                    {t(`about.stats.${stat.labelKey}`)}
+                  </div>
                 </div>
-                <div className="text-small text-muted-foreground uppercase tracking-wider">
-                  {t(`about.stats.${stat.labelKey}`)}
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </motion.div>
         </motion.div>
       </div>

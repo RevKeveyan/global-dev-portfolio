@@ -7,6 +7,7 @@ import { NoiseBackground } from './NoiseBackground';
 import { PathBackground } from './PathBackground';
 import { SectionSpotlight } from './SectionSpotlight';
 import { ScrollPaths } from './ScrollPaths';
+import { ReadabilityOverlay } from './ReadabilityOverlay';
 
 export type SectionType = 'hero' | 'about' | 'skills' | 'projects' | 'experience' | 'languages' | 'contact';
 
@@ -58,16 +59,16 @@ export const BackgroundManager = () => {
 
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
-      {/* Base gradient */}
+      {/* Layer 1: Base gradient */}
       <div 
         className="absolute inset-0"
         style={{ background: 'var(--gradient-hero)' }}
       />
 
-      {/* Scroll-animated SVG paths layer */}
+      {/* Layer 2: Scroll-animated SVG paths */}
       <ScrollPaths />
       
-      {/* Section-specific background layer */}
+      {/* Layer 3: Section-specific animated background */}
       <AnimatePresence mode="wait">
         <motion.div
           key={activeSection}
@@ -84,8 +85,11 @@ export const BackgroundManager = () => {
         </motion.div>
       </AnimatePresence>
 
-      {/* Section spotlight overlay */}
+      {/* Layer 4: Section spotlight for contrast */}
       <SectionSpotlight />
+
+      {/* Layer 5: Readability overlay - ensures text contrast */}
+      <ReadabilityOverlay />
     </div>
   );
 };

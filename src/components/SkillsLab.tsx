@@ -68,11 +68,11 @@ export const SkillsLab = () => {
         >
           {/* Section Header with surface */}
           <motion.div variants={itemVariants} className="text-center mb-12">
-            <div className="surface-panel inline-block px-8 py-6">
-              <h2 className="text-headline mb-4">
-                <span className="text-gradient">{t('skills.title')}</span>
+            <div className="surface-panel inline-block px-8 py-6 sm:px-12 sm:py-8">
+              <h2 className="text-headline mb-3">
+                <span className="text-gradient font-extrabold">{t('skills.title')}</span>
               </h2>
-              <p className="text-body-lg max-w-2xl mx-auto">
+              <p className="text-body-lg text-foreground/80 max-w-2xl mx-auto">
                 {t('skills.subtitle')}
               </p>
             </div>

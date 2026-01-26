@@ -5,6 +5,12 @@ import { WebSocketsDemo } from './demos/WebSocketsDemo';
 import { RedisDemo } from './demos/RedisDemo';
 import { DockerDemo } from './demos/DockerDemo';
 import { RestDemo } from './demos/RestDemo';
+import { ReactDemo } from './demos/ReactDemo';
+import { GraphQLDemo } from './demos/GraphQLDemo';
+import { TypeScriptDemo } from './demos/TypeScriptDemo';
+import { GitDemo } from './demos/GitDemo';
+import { VueDemo } from './demos/VueDemo';
+import { NodeDemo } from './demos/NodeDemo';
 import { DefaultDemo } from './demos/DefaultDemo';
 
 interface SkillDemoProps {
@@ -26,6 +32,18 @@ export const SkillDemo = ({ skill, isPlaying, reducedMotion }: SkillDemoProps) =
         return <DockerDemo isPlaying={isPlaying} reducedMotion={reducedMotion} />;
       case 'rest':
         return <RestDemo isPlaying={isPlaying} reducedMotion={reducedMotion} />;
+      case 'react':
+        return <ReactDemo isPlaying={isPlaying} reducedMotion={reducedMotion} />;
+      case 'graphql':
+        return <GraphQLDemo isPlaying={isPlaying} reducedMotion={reducedMotion} />;
+      case 'typescript':
+        return <TypeScriptDemo isPlaying={isPlaying} reducedMotion={reducedMotion} />;
+      case 'git':
+        return <GitDemo isPlaying={isPlaying} reducedMotion={reducedMotion} />;
+      case 'vue':
+        return <VueDemo isPlaying={isPlaying} reducedMotion={reducedMotion} />;
+      case 'nodejs':
+        return <NodeDemo isPlaying={isPlaying} reducedMotion={reducedMotion} />;
       default:
         return <DefaultDemo skill={skill} reducedMotion={reducedMotion} />;
     }

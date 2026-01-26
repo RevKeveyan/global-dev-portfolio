@@ -17,6 +17,10 @@ export type DemoType =
   | 'rest' 
   | 'react' 
   | 'graphql'
+  | 'typescript'
+  | 'git'
+  | 'vue'
+  | 'nodejs'
   | 'default';
 
 export interface Skill {
@@ -43,7 +47,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
 export const skills: Skill[] = [
   // Frontend
   { id: 'react', labelKey: 'react', category: 'frontend', icon: 'atom', demoType: 'react', color: '#61DAFB' },
-  { id: 'typescript', labelKey: 'typescript', category: 'frontend', icon: 'file-code', demoType: 'default', color: '#3178C6' },
+  { id: 'typescript', labelKey: 'typescript', category: 'frontend', icon: 'file-code', demoType: 'typescript', color: '#3178C6' },
   { id: 'nextjs', labelKey: 'nextjs', category: 'frontend', icon: 'triangle', demoType: 'default', color: '#FFFFFF' },
   { id: 'tailwind', labelKey: 'tailwind', category: 'frontend', icon: 'palette', demoType: 'default', color: '#06B6D4' },
   { id: 'redux', labelKey: 'redux', category: 'frontend', icon: 'layers', demoType: 'redux', color: '#764ABC' },
@@ -53,12 +57,12 @@ export const skills: Skill[] = [
   { id: 'framer', labelKey: 'framer', category: 'ui', icon: 'sparkles', demoType: 'default', color: '#BB4DFF' },
 
   // Vue Ecosystem
-  { id: 'vue', labelKey: 'vue', category: 'vue', icon: 'component', demoType: 'default', color: '#4FC08D' },
+  { id: 'vue', labelKey: 'vue', category: 'vue', icon: 'component', demoType: 'vue', color: '#4FC08D' },
   { id: 'nuxt', labelKey: 'nuxt', category: 'vue', icon: 'hexagon', demoType: 'default', color: '#00DC82' },
   { id: 'pinia', labelKey: 'pinia', category: 'vue', icon: 'database', demoType: 'default', color: '#FFD859' },
 
   // Backend
-  { id: 'nodejs', labelKey: 'nodejs', category: 'backend', icon: 'server', demoType: 'default', color: '#339933' },
+  { id: 'nodejs', labelKey: 'nodejs', category: 'backend', icon: 'server', demoType: 'nodejs', color: '#339933' },
   { id: 'express', labelKey: 'express', category: 'backend', icon: 'route', demoType: 'default', color: '#FFFFFF' },
   { id: 'graphql', labelKey: 'graphql', category: 'backend', icon: 'share-2', demoType: 'graphql', color: '#E10098' },
   { id: 'websockets', labelKey: 'websockets', category: 'backend', icon: 'radio', demoType: 'websockets', color: '#00D4FF' },
@@ -75,7 +79,7 @@ export const skills: Skill[] = [
   { id: 'aws', labelKey: 'aws', category: 'devops', icon: 'cloud', demoType: 'default', color: '#FF9900' },
 
   // Tooling
-  { id: 'git', labelKey: 'git', category: 'tooling', icon: 'git-branch', demoType: 'default', color: '#F05032' },
+  { id: 'git', labelKey: 'git', category: 'tooling', icon: 'git-branch', demoType: 'git', color: '#F05032' },
   { id: 'webpack', labelKey: 'webpack', category: 'tooling', icon: 'package', demoType: 'default', color: '#8DD6F9' },
   { id: 'vite', labelKey: 'vite', category: 'tooling', icon: 'bolt', demoType: 'default', color: '#646CFF' },
 

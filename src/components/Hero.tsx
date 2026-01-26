@@ -72,72 +72,77 @@ export const Hero = () => {
           animate="visible"
           className="max-w-4xl mx-auto text-center"
         >
-          {/* Availability Badge */}
-          <motion.div variants={itemVariants} className="mb-8">
-            <span className="badge-available">
-              {t('hero.availability')}
-            </span>
-          </motion.div>
+          {/* Hero content surface for readability */}
+          <div className="surface-hero p-8 sm:p-12 md:p-16">
+            {/* Availability Badge */}
+            <motion.div variants={itemVariants} className="mb-8">
+              <span className="badge-available">
+                {t('hero.availability')}
+              </span>
+            </motion.div>
 
-          {/* Main Headline */}
-          <motion.h1 
-            variants={itemVariants}
-            className="text-display mb-6"
-          >
-            <span className="text-gradient">{t('hero.title')}</span>
-          </motion.h1>
+            {/* Main Headline */}
+            <motion.h1 
+              variants={itemVariants}
+              className="text-display mb-6"
+            >
+              <span className="text-gradient">{t('hero.title')}</span>
+            </motion.h1>
 
-          {/* Subheadline */}
-          <motion.p 
-            variants={itemVariants}
-            className="text-body-lg text-muted-foreground max-w-2xl mx-auto mb-10"
-          >
-            {t('hero.subtitle')}
-          </motion.p>
+            {/* Subheadline */}
+            <motion.p 
+              variants={itemVariants}
+              className="text-body-lg max-w-2xl mx-auto mb-10"
+            >
+              {t('hero.subtitle')}
+            </motion.p>
 
-          {/* CTAs */}
+            {/* CTAs */}
+            <motion.div 
+              variants={itemVariants}
+              className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
+            >
+              <Button 
+                asChild
+                size="lg" 
+                className="min-w-[180px] bg-primary text-primary-foreground hover:bg-primary/90 glow-sm text-cta"
+              >
+                <a href="#projects">
+                  <Sparkles className="w-4 h-4 mr-2" />
+                  {t('hero.cta.projects')}
+                </a>
+              </Button>
+              <Button 
+                asChild
+                variant="outline" 
+                size="lg"
+                className="min-w-[180px] border-muted-foreground/30 hover:bg-muted/50 text-cta"
+              >
+                <a href="#contact">
+                  {t('hero.cta.contact')}
+                </a>
+              </Button>
+            </motion.div>
+          </div>
+
+          {/* Tech Ticker - outside surface for visual interest */}
           <motion.div 
             variants={itemVariants}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
+            className="relative overflow-hidden py-6 mt-8"
           >
-            <Button 
-              asChild
-              size="lg" 
-              className="min-w-[180px] bg-primary text-primary-foreground hover:bg-primary/90 glow-sm"
-            >
-              <a href="#projects">
-                <Sparkles className="w-4 h-4 mr-2" />
-                {t('hero.cta.projects')}
-              </a>
-            </Button>
-            <Button 
-              asChild
-              variant="outline" 
-              size="lg"
-              className="min-w-[180px] border-muted-foreground/30 hover:bg-muted/50"
-            >
-              <a href="#contact">
-                {t('hero.cta.contact')}
-              </a>
-            </Button>
-          </motion.div>
-
-          {/* Tech Ticker */}
-          <motion.div 
-            variants={itemVariants}
-            className="relative overflow-hidden py-4"
-          >
-            <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-background to-transparent z-10" />
-            <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-background to-transparent z-10" />
-            
-            <div className={`flex gap-4 ${reducedMotionEnabled ? 'flex-wrap justify-center' : 'animate-ticker'}`}>
-              {/* Duplicate items for seamless loop */}
-              {[...techTicker, ...techTicker].map((tech, index) => (
-                <div key={`${tech.id}-${index}`} className="ticker-item shrink-0">
-                  <TechIcon name={tech.icon} className="w-4 h-4" style={{ color: tech.color }} />
-                  <span>{tech.name}</span>
-                </div>
-              ))}
+            <div className="surface-panel px-4 py-3 mx-auto max-w-3xl">
+              <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-muted/80 to-transparent z-10 rounded-l-xl" />
+              <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-muted/80 to-transparent z-10 rounded-r-xl" />
+              
+              <div className={`flex gap-4 ${reducedMotionEnabled ? 'flex-wrap justify-center' : 'animate-ticker'}`}>
+                {/* Duplicate items for seamless loop */}
+                {[...techTicker, ...techTicker].map((tech, index) => (
+                  <div key={`${tech.id}-${index}`} className="ticker-item shrink-0">
+                    <TechIcon name={tech.icon} className="w-4 h-4" style={{ color: tech.color }} />
+                    <span>{tech.name}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </motion.div>
         </motion.div>

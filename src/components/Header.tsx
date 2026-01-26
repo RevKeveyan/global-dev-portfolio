@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { useReducedMotion } from '@/hooks/useReducedMotion';
+import { AccessibilityToggle } from '@/components/AccessibilityToggle';
 import { 
   SUPPORTED_LANGUAGES, 
   LANGUAGE_NAMES, 
@@ -87,9 +88,10 @@ export const Header = () => {
             ))}
           </div>
 
-          {/* Right side: Language Switcher + Mobile Menu */}
-          <div className="flex items-center gap-2">
-            {/* Language Switcher */}
+          {/* Right side: Accessibility + Language Switcher + Mobile Menu */}
+          <div className="flex items-center gap-1">
+            {/* Accessibility Toggle */}
+            <AccessibilityToggle />
             <div className="relative">
               <button
                 onClick={() => setIsLangMenuOpen(prev => !prev)}

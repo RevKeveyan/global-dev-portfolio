@@ -146,33 +146,171 @@
     @apply w-full px-4 sm:px-6 lg:px-8;
   }
 
-  /* Typography scale */
+  /* ========================================
+     SURFACE SYSTEM - Readable content panels
+     ======================================== */
+  
+  /* Hero surface - largest, most prominent */
+  .surface-hero {
+    @apply relative rounded-3xl;
+    background: hsl(var(--background) / 0.45);
+    border: 1px solid hsl(var(--border) / 0.15);
+    box-shadow: 
+      0 8px 32px hsl(0 0% 0% / 0.2),
+      inset 0 1px 0 hsl(255 255 255 / 0.03);
+    backdrop-filter: blur(12px);
+  }
+
+  .high-contrast .surface-hero {
+    background: hsl(var(--background) / 0.75);
+    border-color: hsl(var(--border) / 0.3);
+  }
+
+  /* Card surface - medium emphasis */
+  .surface-card {
+    @apply relative rounded-2xl p-6;
+    background: hsl(var(--card) / 0.55);
+    border: 1px solid hsl(var(--border) / 0.12);
+    box-shadow: 
+      0 4px 24px hsl(0 0% 0% / 0.15),
+      inset 0 1px 0 hsl(255 255 255 / 0.02);
+    backdrop-filter: blur(10px);
+  }
+
+  .high-contrast .surface-card {
+    background: hsl(var(--card) / 0.85);
+    border-color: hsl(var(--border) / 0.25);
+  }
+
+  /* Panel surface - subtle, inline content */
+  .surface-panel {
+    @apply relative rounded-xl p-4;
+    background: hsl(var(--muted) / 0.35);
+    border: 1px solid hsl(var(--border) / 0.08);
+    box-shadow: 0 2px 12px hsl(0 0% 0% / 0.1);
+    backdrop-filter: blur(8px);
+  }
+
+  .high-contrast .surface-panel {
+    background: hsl(var(--muted) / 0.65);
+    border-color: hsl(var(--border) / 0.2);
+  }
+
+  /* Glass variant - transparent with blur */
+  .surface-glass {
+    @apply relative rounded-xl;
+    background: hsl(var(--card) / 0.25);
+    border: 1px solid hsl(var(--border) / 0.1);
+    backdrop-filter: blur(16px);
+  }
+
+  .high-contrast .surface-glass {
+    background: hsl(var(--card) / 0.55);
+  }
+
+  /* Interactive surface - cards that respond to hover */
+  .surface-interactive {
+    @apply surface-card transition-all duration-300;
+  }
+
+  .surface-interactive:hover {
+    background: hsl(var(--card) / 0.65);
+    border-color: hsl(var(--primary) / 0.2);
+    transform: translateY(-2px);
+    box-shadow: 
+      0 8px 32px hsl(0 0% 0% / 0.2),
+      0 0 24px hsl(var(--primary) / 0.08);
+  }
+
+  /* ========================================
+     TEXT STYLING - Clear hierarchy & readability
+     ======================================== */
+
+  /* Heading text - high emphasis */
+  .text-heading {
+    @apply text-foreground font-bold;
+    letter-spacing: -0.02em;
+    text-shadow: 0 1px 2px hsl(0 0% 0% / 0.1);
+  }
+
+  .high-contrast .text-heading {
+    text-shadow: 0 2px 4px hsl(0 0% 0% / 0.3);
+  }
+
+  /* Body text - readable, slightly muted */
+  .text-readable {
+    @apply leading-relaxed;
+    color: hsl(var(--foreground) / 0.88);
+  }
+
+  .high-contrast .text-readable {
+    color: hsl(var(--foreground) / 0.95);
+  }
+
+  /* Muted text - lower emphasis */
+  .text-subtle {
+    @apply leading-relaxed;
+    color: hsl(var(--muted-foreground) / 0.9);
+  }
+
+  .high-contrast .text-subtle {
+    color: hsl(var(--foreground) / 0.8);
+  }
+
+  /* Link styling with clear states */
+  .text-link {
+    @apply relative inline-flex items-center gap-1 font-medium transition-colors;
+    color: hsl(var(--primary));
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    text-decoration-color: hsl(var(--primary) / 0.4);
+  }
+
+  .text-link:hover {
+    text-decoration-color: hsl(var(--primary));
+  }
+
+  .text-link:focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-background rounded-sm;
+  }
+
+  /* CTA text - actionable, high contrast */
+  .text-cta {
+    @apply font-semibold tracking-wide;
+    text-shadow: 0 1px 2px hsl(0 0% 0% / 0.15);
+  }
+
+  /* ========================================
+     TYPOGRAPHY SCALE
+     ======================================== */
+
   .text-display {
-    @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight;
+    @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-heading;
   }
 
   .text-headline {
-    @apply text-2xl sm:text-3xl md:text-4xl font-bold leading-tight;
+    @apply text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-heading;
   }
 
   .text-title {
-    @apply text-xl sm:text-2xl font-semibold;
+    @apply text-xl sm:text-2xl font-semibold text-heading;
   }
 
   .text-body-lg {
-    @apply text-lg sm:text-xl leading-relaxed;
+    @apply text-lg sm:text-xl text-readable;
   }
 
   .text-body {
-    @apply text-base leading-relaxed;
+    @apply text-base text-readable;
   }
 
   .text-small {
-    @apply text-sm leading-normal;
+    @apply text-sm leading-normal text-subtle;
   }
 
   .text-caption {
-    @apply text-xs uppercase tracking-wider font-medium;
+    @apply text-xs uppercase tracking-wider font-medium text-subtle;
   }
 
   /* Gradient text */
@@ -180,6 +318,10 @@
     @apply bg-clip-text text-transparent;
     background-image: var(--gradient-primary);
   }
+
+  /* ========================================
+     LEGACY CLASSES (kept for compatibility)
+     ======================================== */
 
   /* Glass effect */
   .glass {
@@ -201,21 +343,13 @@
     box-shadow: 0 0 30px hsl(var(--primary) / 0.15);
   }
 
-  /* Card variants */
+  /* Card variants - now using surface system */
   .card-premium {
-    @apply rounded-2xl border border-border/50 p-6;
-    background: var(--gradient-card);
-    box-shadow: var(--shadow-card);
+    @apply surface-card;
   }
 
   .card-interactive {
-    @apply card-premium transition-all duration-300;
-  }
-
-  .card-interactive:hover {
-    @apply border-primary/30;
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-elevated), 0 0 40px hsl(var(--primary) / 0.1);
+    @apply surface-interactive;
   }
 
   /* Button enhancements */
@@ -262,11 +396,10 @@
     @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background;
   }
 
-  /* Skill demo container */
+  /* Skill demo container - uses surface system */
   .demo-container {
-    @apply relative rounded-xl overflow-hidden;
-    background: linear-gradient(145deg, hsl(220 25% 12%), hsl(220 25% 8%));
-    border: 1px solid hsl(var(--border) / 0.5);
+    @apply surface-panel;
+    background: linear-gradient(145deg, hsl(220 25% 12% / 0.8), hsl(220 25% 8% / 0.6));
   }
 
   /* Tech ticker */

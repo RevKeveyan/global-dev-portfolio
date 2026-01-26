@@ -404,9 +404,9 @@
 
   /* Tech ticker */
   .ticker-item {
-    @apply flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium;
-    background: hsl(var(--muted) / 0.5);
-    border: 1px solid hsl(var(--border) / 0.5);
+    @apply flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-foreground;
+    background: hsl(var(--background));
+    border: 1px solid hsl(var(--border));
   }
 
   /* Availability badge */

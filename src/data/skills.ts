@@ -37,6 +37,7 @@ export type DemoType =
   | 'vercel'
   | 'supabase'
   | 'nestjs'
+  | 'seo'
   | 'default';
 
 export interface Skill {
@@ -105,7 +106,7 @@ export const skills: Skill[] = [
   { id: 'supabase', labelKey: 'supabase', category: 'platforms', icon: 'database', demoType: 'supabase', color: '#3ECF8E' },
 
   // SEO
-  { id: 'seo', labelKey: 'seo', category: 'seo', icon: 'search', demoType: 'default', color: '#4285F4' },
+  { id: 'seo', labelKey: 'seo', category: 'seo', icon: 'search', demoType: 'seo', color: '#4285F4' },
 ];
 
 export const getSkillsByCategory = (category: SkillCategory): Skill[] => {

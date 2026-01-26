@@ -28,6 +28,7 @@ import { ViteDemo } from './demos/ViteDemo';
 import { VercelDemo } from './demos/VercelDemo';
 import { SupabaseDemo } from './demos/SupabaseDemo';
 import { NestDemo } from './demos/NestDemo';
+import { SEODemo } from './demos/SEODemo';
 
 interface SkillDemoProps {
   skill: Skill;
@@ -92,6 +93,8 @@ export const SkillDemo = ({ skill, isPlaying, reducedMotion }: SkillDemoProps) =
         return <SupabaseDemo isPlaying={isPlaying} reducedMotion={reducedMotion} />;
       case 'nestjs':
         return <NestDemo isPlaying={isPlaying} reducedMotion={reducedMotion} />;
+      case 'seo':
+        return <SEODemo isPlaying={isPlaying} reducedMotion={reducedMotion} />;
       default:
         return <DefaultDemo skill={skill} reducedMotion={reducedMotion} />;
     }

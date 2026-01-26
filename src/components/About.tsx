@@ -54,16 +54,14 @@ export const About = () => {
           animate={isInView ? 'visible' : 'hidden'}
           className="max-w-5xl mx-auto"
         >
-          {/* Section Header with surface */}
+          {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-16">
-            <div className="surface-panel inline-block px-8 py-6 mb-6">
-              <h2 className="text-headline mb-4">
-                <span className="text-gradient">{t('about.title')}</span>
-              </h2>
-              <p className="text-body-lg max-w-2xl mx-auto">
-                {t('about.desc')}
-              </p>
-            </div>
+            <h2 className="text-headline mb-4">
+              <span className="text-gradient font-extrabold">{t('about.title')}</span>
+            </h2>
+            <p className="text-body-lg text-muted-foreground max-w-2xl mx-auto">
+              {t('about.desc')}
+            </p>
           </motion.div>
 
           {/* Value Cards - using surface-interactive */}

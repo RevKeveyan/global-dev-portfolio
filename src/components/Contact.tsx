@@ -94,14 +94,12 @@ export const Contact = () => {
         >
           {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-12">
-            <div className="surface-panel inline-block px-8 py-6 sm:px-12 sm:py-8">
-              <h2 className="text-headline mb-3">
-                <span className="text-gradient font-extrabold">{t('contact.title')}</span>
-              </h2>
-              <p className="text-body-lg text-foreground/80 max-w-2xl mx-auto">
-                {t('contact.subtitle')}
-              </p>
-            </div>
+            <h2 className="text-headline mb-3">
+              <span className="text-gradient font-extrabold">{t('contact.title')}</span>
+            </h2>
+            <p className="text-body-lg text-muted-foreground max-w-2xl mx-auto">
+              {t('contact.subtitle')}
+            </p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-12">

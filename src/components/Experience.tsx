@@ -54,12 +54,14 @@ export const Experience = () => {
         >
           {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-16">
-            <h2 className="text-headline mb-4">
-              <span className="text-gradient">{t('experience.title')}</span>
-            </h2>
-            <p className="text-body-lg text-muted-foreground max-w-2xl mx-auto">
-              {t('experience.subtitle')}
-            </p>
+            <div className="surface-panel inline-block px-8 py-6 sm:px-12 sm:py-8">
+              <h2 className="text-headline mb-3">
+                <span className="text-gradient font-extrabold">{t('experience.title')}</span>
+              </h2>
+              <p className="text-body-lg text-foreground/80 max-w-2xl mx-auto">
+                {t('experience.subtitle')}
+              </p>
+            </div>
           </motion.div>
 
           {/* Timeline */}

@@ -5,10 +5,10 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 import { useReducedMotion } from '@/hooks/useReducedMotion';
 import { AccessibilityToggle } from '@/components/AccessibilityToggle';
 import { ThemeToggle } from '@/components/ThemeToggle';
+import { FlagIcon } from '@/components/flags/FlagIcon';
 import { 
   SUPPORTED_LANGUAGES, 
   LANGUAGE_NAMES, 
-  LANGUAGE_FLAGS, 
   changeLanguage,
   type SupportedLanguage 
 } from '@/i18n';
@@ -98,11 +98,11 @@ export const Header = () => {
             <div className="relative">
               <button
                 onClick={() => setIsLangMenuOpen(prev => !prev)}
-                className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors focus-ring rounded-md"
+                className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors focus-ring rounded-lg surface-glass hover:bg-muted/30"
                 aria-label={t('accessibility.languageSwitch')}
                 aria-expanded={isLangMenuOpen}
               >
-                <span className="text-base">{LANGUAGE_FLAGS[currentLang]}</span>
+                <FlagIcon lang={currentLang} className="w-5 h-3.5 rounded-sm shadow-sm" />
                 <span className="hidden sm:inline">{currentLang.toUpperCase()}</span>
                 <ChevronDown className={`w-4 h-4 transition-transform ${isLangMenuOpen ? 'rotate-180' : ''}`} />
               </button>
@@ -110,22 +110,31 @@ export const Header = () => {
               <AnimatePresence>
                 {isLangMenuOpen && (
                   <motion.div
-                    initial={reducedMotionEnabled ? { opacity: 1 } : { opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={reducedMotionEnabled ? { opacity: 0 } : { opacity: 0, y: -10 }}
-                    className="absolute top-full right-0 mt-2 w-40 py-2 glass-strong rounded-lg shadow-lg z-50"
+                    initial={reducedMotionEnabled ? { opacity: 1 } : { opacity: 0, y: -10, scale: 0.95 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={reducedMotionEnabled ? { opacity: 0 } : { opacity: 0, y: -10, scale: 0.95 }}
+                    transition={{ duration: 0.15 }}
+                    className="absolute top-full right-0 mt-2 w-44 py-2 surface-card rounded-xl shadow-lg z-50 overflow-hidden"
                   >
                     {SUPPORTED_LANGUAGES.map((lang) => (
                       <button
                         key={lang}
                         onClick={() => handleLanguageChange(lang)}
-                        className={`w-full flex items-center gap-3 px-4 py-2 text-sm transition-colors hover:bg-muted/50 focus-ring ${
-                          lang === currentLang ? 'text-primary font-medium' : 'text-muted-foreground'
+                        className={`w-full flex items-center gap-3 px-4 py-2.5 text-sm transition-all hover:bg-primary/10 focus-ring ${
+                          lang === currentLang 
+                            ? 'text-primary font-medium bg-primary/5' 
+                            : 'text-foreground/80 hover:text-foreground'
                         }`}
                         aria-current={lang === currentLang ? 'true' : undefined}
                       >
-                        <span>{LANGUAGE_FLAGS[lang]}</span>
+                        <FlagIcon lang={lang} className="w-6 h-4 rounded-sm shadow-sm" />
                         <span>{LANGUAGE_NAMES[lang]}</span>
+                        {lang === currentLang && (
+                          <motion.div 
+                            layoutId="active-lang"
+                            className="ml-auto w-1.5 h-1.5 rounded-full bg-primary"
+                          />
+                        )}
                       </button>
                     ))}
                   </motion.div>

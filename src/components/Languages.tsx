@@ -42,14 +42,12 @@ export const Languages = () => {
         >
           {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-12">
-            <div className="surface-panel inline-block px-8 py-6 sm:px-12 sm:py-8">
-              <h2 className="text-headline mb-3">
-                <span className="text-gradient font-extrabold">{t('languages.title')}</span>
-              </h2>
-              <p className="text-body-lg text-foreground/80">
-                {t('languages.subtitle')}
-              </p>
-            </div>
+            <h2 className="text-headline mb-3">
+              <span className="text-gradient font-extrabold">{t('languages.title')}</span>
+            </h2>
+            <p className="text-body-lg text-muted-foreground">
+              {t('languages.subtitle')}
+            </p>
           </motion.div>
 
           {/* Languages Grid */}

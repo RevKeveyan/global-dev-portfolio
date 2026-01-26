@@ -37,8 +37,8 @@ export const Footer = () => {
               href="#" 
               className="flex items-center gap-2 text-xl font-display font-bold text-foreground focus-ring rounded-md"
             >
-              <span className="text-gradient">Dev</span>
-              <span>Portfolio</span>
+              <span className="text-gradient">Revik</span>
+              <span>Keveyan</span>
             </a>
 
             {/* Nav Links */}
@@ -72,7 +72,7 @@ export const Footer = () => {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-foreground/70">
             <div className="flex items-center gap-2">
               <span>© {currentYear}</span>
-              <span className="text-gradient font-semibold">DevPortfolio</span>
+              <span className="text-gradient font-semibold">Revik Keveyan</span>
               <span>•</span>
               <span>{t('footer.rights')}</span>
             </div>

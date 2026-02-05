@@ -10,7 +10,8 @@
     "experience": "Experience",
     "contact": "Contact",
     "about": "About",
-    "languages": "Languages"
+    "languages": "Languages",
+    "services": "Services"
   },
   "hero": {
     "title": "Full-Stack Developer",
@@ -175,6 +176,89 @@
       "seo": {
         "name": "SEO",
         "useCases": ["Search Optimization", "Meta Tags", "Structured Data"]
+      }
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Professional services tailored to bring your vision to life",
+    "includes": "What's Included",
+    "getStarted": "Get Started",
+    "categories": {
+      "development": "Development",
+      "design": "Design",
+      "consulting": "Consulting"
+    },
+    "items": {
+      "webApps": {
+        "name": "Web Applications",
+        "description": "Custom web applications built with modern frameworks, optimized for performance and user experience.",
+        "features": ["Responsive design", "Progressive Web Apps", "Real-time features", "API integration"]
+      },
+      "mobileApps": {
+        "name": "Mobile Apps",
+        "description": "Cross-platform mobile applications that deliver native-like experiences on iOS and Android.",
+        "features": ["React Native development", "Push notifications", "Offline support", "App store deployment"]
+      },
+      "apiDevelopment": {
+        "name": "API Development",
+        "description": "Robust RESTful and GraphQL APIs designed for scalability, security, and performance.",
+        "features": ["REST & GraphQL", "Authentication & security", "Documentation", "Rate limiting"]
+      },
+      "ecommerce": {
+        "name": "E-Commerce",
+        "description": "Full-featured online stores with payment processing, inventory management, and analytics.",
+        "features": ["Payment integration", "Inventory management", "Order tracking", "Analytics dashboard"]
+      },
+      "saas": {
+        "name": "SaaS Platforms",
+        "description": "Scalable software-as-a-service solutions with multi-tenancy, billing, and user management.",
+        "features": ["Multi-tenant architecture", "Subscription billing", "User management", "Analytics & reporting"]
+      },
+      "cms": {
+        "name": "CMS Solutions",
+        "description": "Content management systems that empower your team to manage content effortlessly.",
+        "features": ["Custom admin panels", "Content workflows", "Media management", "SEO tools"]
+      },
+      "uiDesign": {
+        "name": "UI Design",
+        "description": "Beautiful, intuitive interfaces that delight users and strengthen your brand identity.",
+        "features": ["Modern aesthetics", "Component libraries", "Design systems", "Responsive layouts"]
+      },
+      "uxDesign": {
+        "name": "UX Design",
+        "description": "User-centered design that ensures seamless experiences and drives engagement.",
+        "features": ["User research", "Wireframing", "Usability testing", "Journey mapping"]
+      },
+      "branding": {
+        "name": "Branding",
+        "description": "Comprehensive brand identity design that sets you apart from the competition.",
+        "features": ["Logo design", "Color palettes", "Typography", "Brand guidelines"]
+      },
+      "prototyping": {
+        "name": "Prototyping",
+        "description": "Interactive prototypes that bring your ideas to life before development begins.",
+        "features": ["Interactive mockups", "User flow testing", "Stakeholder demos", "Rapid iteration"]
+      },
+      "techConsulting": {
+        "name": "Tech Consulting",
+        "description": "Strategic guidance on technology choices, architecture, and best practices.",
+        "features": ["Technology assessment", "Architecture design", "Best practices", "Team training"]
+      },
+      "codeReview": {
+        "name": "Code Review",
+        "description": "Expert review of your codebase with actionable recommendations for improvement.",
+        "features": ["Security audit", "Performance analysis", "Best practices", "Documentation"]
+      },
+      "architecture": {
+        "name": "Architecture Design",
+        "description": "Scalable system architecture designed for growth, reliability, and maintainability.",
+        "features": ["System design", "Database modeling", "Microservices", "Cloud architecture"]
+      },
+      "seoOptimization": {
+        "name": "SEO Optimization",
+        "description": "Comprehensive SEO strategies to improve your visibility and organic traffic.",
+        "features": ["Technical SEO", "Content optimization", "Performance tuning", "Analytics setup"]
       }
     }
   },

@@ -9,12 +9,13 @@ import { SectionSpotlight } from './SectionSpotlight';
 import { ScrollPaths } from './ScrollPaths';
 import { ReadabilityOverlay } from './ReadabilityOverlay';
 
-export type SectionType = 'hero' | 'about' | 'skills' | 'projects' | 'experience' | 'languages' | 'contact';
+export type SectionType = 'hero' | 'about' | 'skills' | 'services' | 'projects' | 'experience' | 'languages' | 'contact';
 
 const sectionBackgrounds: Record<SectionType, React.ComponentType> = {
   hero: AuroraBackground,
   about: AuroraBackground,
   skills: TechGridBackground,
+  services: TechGridBackground,
   projects: NoiseBackground,
   experience: PathBackground,
   languages: PathBackground,

@@ -39,7 +39,7 @@ export const SEOHead = ({ path = '/' }: SEOHeadProps) => {
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
-      <meta name="author" content="Revik Keveyan" />
+      <meta name="author" content="Narek Hovannisyan" />
       <meta name="robots" content="index, follow" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta charSet="utf-8" />
@@ -81,14 +81,14 @@ export const SEOHead = ({ path = '/' }: SEOHeadProps) => {
       
       {/* Additional SEO */}
       <meta name="theme-color" content="#0a0f1e" />
-      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+      <link rel="icon" type="image/x-icon" href={`${import.meta.env.BASE_URL}favicon.ico`} />
       
       {/* Structured Data (JSON-LD) */}
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Person",
-          "name": "Revik Keveyan",
+          "name": "Narek Hovannisyan",
           "url": baseUrl,
           "jobTitle": "Full-Stack Developer",
           "description": description,
